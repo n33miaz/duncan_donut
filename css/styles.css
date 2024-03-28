@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > h1 { 
+    font-size: 40px;
+    margin: 50px 0 0 0;
+}
+
+main > h3 {
+    font-size: 20px;
+    margin: 20px 0 50px 0;
+}
+
+#pedidos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+#pedidos > img {
+    width: 250px;
+}
+
+.fomulario-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 15px 0 15px;
+}
+
+.fomulario-pedido > div {
+    display: flex;
+    justify-content: space-around;
+}
