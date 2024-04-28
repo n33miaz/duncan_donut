@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duncan's Donuts</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <h1>Duncan's Donuts Com Hora Marcada</h1>
+        <h3>Delícias por apenas 5 reais!</h3>
+        <div id="pedidos">
+            <img src="./assets/donuttime.png" alt="Donut e um Relógio">
+            <div class="fomulario-pedido">
+                <div id="entradas">
+                    <input id="nome" type="text" placeholder="Nome:">
+                    <input id="qntd-classicos" type="number" placeholder="Classicos:">
+                    <input id="qntd-granulados" type="number" placeholder="Granulados:">
+                    <input id="data-hora" type="datetime-local" placeholder="Retirada:">
+                    <button onclick="exibirResultado()">Confirmar Pedido</button>
+                </div>
+                <div id="saidas">
+                    <div>
+                        <label for="subtotal">Subtotal:</label>
+                        <p id="subtotal"></p> <!-- valor -->
+                    </div>
+                    <div>
+                        <label for="taxa">Taxa:</label>
+                        <p id="taxa"></p> <!-- valor -->    
+                    </div>
+                    <div>
+                        <label for="total">Total:</label>
+                        <p id="total"></p> <!-- valor -->    
+                    </div>
+                    <button onclick="finalizarPedido()">Pagar</button>
+                </div>   
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>
