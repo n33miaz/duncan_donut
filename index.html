@@ -17,35 +17,28 @@
         <div id="pedidos">
             <img src="./assets/donuttime.png" alt="Donut e um Relógio">
             <div class="fomulario-pedido">
-                <div>
-                    <label for="input">Nome: </label>
-                    <input id="nome" type="text">
+                <div id="entradas">
+                    <input id="nome" type="text" placeholder="Nome:">
+                    <input id="qntd-classicos" type="number" placeholder="Classicos:">
+                    <input id="qntd-granulados" type="number" placeholder="Granulados:">
+                    <input id="data-hora" type="datetime-local" placeholder="Retirada:">
+                    <button onclick="exibirResultado()">Confirmar Pedido</button>
                 </div>
-                <div>
-                    <label for="input">Classico: </label>
-                    <input id="qntd-classicos" type="number">
-                </div>
-                <div>
-                    <label for="input">Granulado: </label>
-                    <input id="qntd-granulados" type="number">
-                </div>
-                <div>
-                    <label for="input">Retirada: </label>
-                    <input type="datetime">
-                </div>
-                <div>
-                    <label for="input">Subtotal: </label>
-                    <input type="datetime">    
-                </div>
-                <div>
-                    <label for="input">Taxa: </label>
-                    <input type="datetime">    
-                </div>
-                <div>
-                    <label for="input">Total: </label>
-                    <input type="datetime">    
-                </div>
-                <button>Enviar</button>
+                <div id="saidas">
+                    <div>
+                        <label for="subtotal">Subtotal:</label>
+                        <p id="subtotal"></p> <!-- valor -->
+                    </div>
+                    <div>
+                        <label for="taxa">Taxa:</label>
+                        <p id="taxa"></p> <!-- valor -->    
+                    </div>
+                    <div>
+                        <label for="total">Total:</label>
+                        <p id="total"></p> <!-- valor -->    
+                    </div>
+                    <button onclick="finalizarPedido()">Pagar</button>
+                </div>   
             </div>
         </div>
     </main>

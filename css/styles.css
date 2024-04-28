@@ -41,11 +41,54 @@ main > h3 {
 .fomulario-pedido {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 0 15px 0 15px;
+    width: 50%;
 }
 
-.fomulario-pedido > div {
+#entradas {
     display: flex;
+    flex-direction: column;
+}
+
+#entradas > * {
+    margin: 3%;
+}
+
+#entradas > input {
+    height: 25px;
+    border-radius: 10px;
+    border-color: #000;
+    border-style: solid;
+}
+
+#entradas > button {
+    cursor: pointer;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #000;
+    border-style: solid;
+    color: #fff;
+}
+
+#saidas {
+    display: none;
+    flex-direction: column;
+}
+
+#saidas > * {
+    margin: 3%;
+}
+
+#saidas > div {
+    display: flex;
+    align-items: center;
     justify-content: space-around;
+}
+
+#saidas > button {
+    cursor: pointer;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #000;
+    border-style: solid;
+    color: #fff;
 }
